@@ -14,8 +14,18 @@
       <file leaf-file-name="runner.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1334">
-              <caret line="120" column="57" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="57" />
+            <state relative-caret-position="-1852">
+              <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -101,8 +111,9 @@
       <find>hash(substr)</find>
       <find>nextPrime</find>
       <find>bucket_prime</find>
-      <find>k2</find>
       <find>rand</find>
+      <find>k2</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -114,8 +125,8 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/Hashing.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch1.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/test2.py" />
-        <option value="$PROJECT_DIR$/example.py" />
         <option value="$PROJECT_DIR$/example_dup.py" />
+        <option value="$PROJECT_DIR$/example.py" />
       </list>
     </option>
   </component>
@@ -318,14 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example_dup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -334,10 +337,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1334">
-          <caret line="120" column="57" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="120" selection-end-column="57" />
+        <state relative-caret-position="-1852">
+          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="10" selection-end-line="93" selection-end-column="14" />
           <folding />
         </state>
       </provider>

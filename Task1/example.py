@@ -1,15 +1,15 @@
 import numpy as np
 
 # Defining constants used for hashing and binning
-LargestPrime = 214657#2147483869
-bucket_prime = 5#2147483869
-bands = 5
-rows = 7
+LargestPrime = 21503#2147483869
+bucket_prime = 27#2147483869
+bands = 27
+rows = 27
 n = bands * rows
-var = np.random.uniform(0, 10000,n)
-cons = np.random.uniform(0, 10000,n)
-var_lsh = np.random.uniform(0,1000,rows)
-cons_lsh = np.random.uniform(0,1000,rows)
+var = np.random.uniform(0, 1000,n)
+cons = np.random.uniform(0, 1000,n)
+var_lsh = np.random.uniform(0,100,rows)
+cons_lsh = np.random.uniform(0,100,rows)
 
 
 # Hashing function for min hash
@@ -70,7 +70,7 @@ def map_sig_to_LSH_buckets(docID, signature, nbands = 5, nrows = 2, bucket_prime
         current_band = signature[i:i + nrows]
         #key = int(sum(current_band) % bucket_prime)
         #key = int(sum(current_band))
-        key = sum([(minHash_func(current_band[j],var_lsh[j],cons_lsh[j],nrows) % bucket_prime) for j in range(len(current_band))])
+        key = sum([(minHash_func(current_band[j],var_lsh[j],cons_lsh[j],nrows)) for j in range(len(current_band))])
         #print key
         buckets_array.append((str(key), docID))
         i = i + nrows
