@@ -1,3 +1,6 @@
+__author__ = "Sumana Srivatsa"
+__email__ = "sumana.srivatsa@bsse.ethz.ch"
+
 import numpy as np
 
 SEED = 456
