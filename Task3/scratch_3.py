@@ -81,3 +81,31 @@ def reducer(key, values):
             counts[min_index] = counts[min_index] + 1
             rate = 1 / counts[min_index]
             centers[min_index, :] = ((1 - rate ** 2) * centers[min_index, :]) + (rate ** 2 * values[sample, :])
+
+
+
+###################################
+##### Weighted ##################
+centers = list()
+    weights = values[:,0]
+    center_indices = np.random.choice(len(values), k)
+
+    for idx in center_indices:
+        centers.append(values[idx,1:])
+
+    centers = np.array(centers)
+    print(np.shape(centers), np.shape(weights))
+
+    for i in xrange(1, k_means_iterations + 1):
+        Euclid_distance = cdist(values[:,1:], centers, 'euclidean')
+        normalised_dist = Euclid_distance / Euclid_distance.sum(axis=1)[:, None]
+        min_indices = np.argmin(normalised_dist, axis=1)
+        min_norm_dist = np.amin(normalised_dist, axis=1)
+        prod_dist_weights = np.multiply(min_norm_dist,weights )
+
+        for clusterID in range(200):
+            if(clusterID in min_indices):
+                cluster_idx = np.where(min_indices == clusterID)[0]
+                numerator = np.sum((values[cluster_idx, 1:].T * prod_dist_weights[cluster_idx]).T , axis = 0)
+                denominator = np.sum(prod_dist_weights[cluster_idx])
+                centers[clusterID, :] = np.divide(numerator, denominator)
