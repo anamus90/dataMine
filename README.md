@@ -1,4 +1,4 @@
-<bold> Data mining solutions <bold>
+<b> Data mining solutions <b>
 
 Exercise solutions for Data Mining: Learning from Large Data Sets course at ETHZ.
 
